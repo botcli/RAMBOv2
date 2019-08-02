@@ -1775,7 +1775,7 @@ local pvstart = RAMBOv2BOT:get(RAMBOv2_ID.."pvstart")
 if pvstart then    
 RAMBOv2_sendMsg(msg.sender_user_id_, 0, 1, ''..check_markdown(pvstart)..'', 1, "md")    
 else    
-RAMBOv2_sendMsg(msg.sender_user_id_, msg.id_, 1, '\n📬*¦* تم ارسال رسالتك الى المطور\n*📛¦* اشترك في قناة المطور \n*🚸¦* [اضغط هنا للدخول الى قناة](t.me/BECIQ) \n', 1, "md")    
+RAMBOv2_sendMsg(msg.sender_user_id_, msg.id_, 1, '\n📬*¦* تم ارسال رسالتك الى المطور\n*📛¦* اشترك في قناة المطور \n*🚸¦* [اضغط هنا للدخول الى قناة](t.me/th3victory) \n', 1, "md")    
 end     
 if not RAMBOv2BOT:sismember(RAMBOv2_ID.."usersbot",msg.chat_id_) then    
 RAMBOv2BOT:sadd(RAMBOv2_ID.."usersbot",msg.chat_id_)    
