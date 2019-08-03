@@ -88,7 +88,7 @@ config = {
 token = RAMBOv2BOT:get(DEVRAMBOv2..":token"),
 SUDO = RAMBOv2BOT:get(DEVRAMBOv2..":SUDO:ID"),
 USERNAME = RAMBOv2BOT:get(DEVRAMBOv2..":SUDO:USERNAME"), }
-create(config, "./requfiles/INFO.lua")   
+create(config, "./requfiles/RAMI.lua")   
 end
 create_config_auto()
 file = io.open("RAMBOv2.sh", "w")  
@@ -128,7 +128,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_RAMBOv2BOT = function()  
-local f = io.open("./requfiles/INFO.lua", "r")  
+local f = io.open("./requfiles/RAMI.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -138,11 +138,11 @@ RAMBOv2BOT:del(DEVRAMBOv2..":SUDO:ID")
 RAMBOv2BOT:del(DEVRAMBOv2..":SUDO:USERNAME")
 RAMBOv2BOT:del(DEVRAMBOv2..":NAMEBOT")
 end  
-local config = loadfile("./requfiles/INFO.lua")() 
+local config = loadfile("./requfiles/RAMI.lua")() 
 return config 
 end 
 _RAMBOv2BOT = load_RAMBOv2BOT()  
-sudos = dofile("requfiles/INFO.lua") 
+sudos = dofile("requfiles/RAMI.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 SUDOUSERNAME = sudos.USERNAME
